@@ -1,0 +1,23 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiteewolf/email-sender.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whiteewolf/email-sender/issues"
+  },
+  "homepage": "https://github.com/whiteewolf/email-sender#readme",
+  "dependencies": {
+    "smtp2": "^0.0.5"
+  }
+}

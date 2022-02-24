@@ -12,13 +12,17 @@ rl.question('What is your email? : ', function(sender) {
     rl.question('Who do you want to send this to ? (Please provide email) : ', function (email) {
         rl.question('Input your message : ', function (msg) {
             let obj = [];
-            data.push({email: email, sender: sender, message: msg, date: new Date()})
+            data.push({
+              email: email,
+              sender: sender,
+              message: msg,
+              date: new Date()
+                      })
             fs.writeFile('./accounts.json', JSON.stringify(data), (err) => {})
             rl.close();
         });
     });
 });
 rl.on('close', function () {
-//   console.log('\nBYE BYE !!!');
-//   process.exit(0);
+  process.exit(0);
 });
